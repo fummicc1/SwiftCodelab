@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CombinePlayground/CombinePlayground.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DispatchConcurrentQueue/DispatchConcurrentQueue.xcodeproj">
    </FileRef>
    <FileRef
