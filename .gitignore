@@ -1,2 +1,4 @@
 *.trace
 DerivedData
+Carthage
+GoogleService-Info.plist
