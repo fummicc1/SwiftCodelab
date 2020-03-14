@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIButtonSubviews/UIButtonSubviews.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CombinePlayground/CombinePlayground.xcodeproj">
    </FileRef>
    <FileRef
