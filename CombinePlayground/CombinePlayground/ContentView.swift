@@ -18,7 +18,7 @@ struct ContentView: View {
             VStack {
                 NavigationLink(destination: AddToDoView()) {
                     HStack {
-                        Image(systemName: "plus").aspectRatio(contentMode: .fill).aspectRatio(contentMode: .fill)
+                        Image(systemName: "plus").aspectRatio(contentMode: .fill)
                         Text("ToDoを追加").font(Font.callout)
                     }
                 }
