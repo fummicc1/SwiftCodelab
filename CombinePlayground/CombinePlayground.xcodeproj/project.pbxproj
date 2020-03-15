@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3BDEFEA241E212E005F5010 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEFE9241E212E005F5010 /* AuthClient.swift */; };
+		D3BDEFEC241E2ACE005F5010 /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */; };
 		D3E8D2D1241C0BBD00DA6A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */; };
 		D3E8D2D3241C0BBD00DA6A1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8D2D2241C0BBD00DA6A1C /* SceneDelegate.swift */; };
 		D3E8D2D5241C0BBD00DA6A1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8D2D4241C0BBD00DA6A1C /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3BDEFE9241E212E005F5010 /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
 		D3E8D2CD241C0BBD00DA6A1C /* CombinePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E8D2D2241C0BBD00DA6A1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				D3E8D2D6241C0BBF00DA6A1C /* Assets.xcassets */,
 				D3E8D2DB241C0BBF00DA6A1C /* LaunchScreen.storyboard */,
 				D3E8D2D8241C0BBF00DA6A1C /* Preview Content */,
+				D3BDEFE9241E212E005F5010 /* AuthClient.swift */,
+				D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */,
 			);
 			path = CombinePlayground;
 			sourceTree = "<group>";
@@ -299,11 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BDEFEA241E212E005F5010 /* AuthClient.swift in Sources */,
 				D3F58FC1241DD4AF005188A3 /* Model.swift in Sources */,
 				D3E8D2D1241C0BBD00DA6A1C /* AppDelegate.swift in Sources */,
 				D3E8D2D3241C0BBD00DA6A1C /* SceneDelegate.swift in Sources */,
 				D3F58FBF241DD46A005188A3 /* ViewModel.swift in Sources */,
 				D3F58FC3241DD4F5005188A3 /* FirestoreClient.swift in Sources */,
+				D3BDEFEC241E2ACE005F5010 /* AddToDoView.swift in Sources */,
 				D3E8D2D5241C0BBD00DA6A1C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

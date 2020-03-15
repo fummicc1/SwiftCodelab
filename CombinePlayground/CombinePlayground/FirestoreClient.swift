@@ -16,8 +16,23 @@ class FirestoreClient {
         case someError(Swift.Error)
     }
     
+    func listenToDos(of user: String, completion: @escaping (Result<[ToDo], FirestoreClient.Error>) -> ()) -> ListenerRegistration {
+        Firestore.firestore().collection("todos").whereField("sender", isEqualTo: user).addSnapshotListener { snapshot, error in
+            if let error = error {
+                completion(.failure(.someError(error)))
+                return
+            }
+            guard let snapshot = snapshot else {
+                completion(.failure(.noSnapshot))
+                return
+            }
+            let todos = snapshot.documents.compactMap { ToDo(data: $0.data()) }
+            completion(.success(todos))
+        }
+    }
+    
     func fetchToDos(of user: String, completion: @escaping (Result<[ToDo], FirestoreClient.Error>) -> ()) {
-        Firestore.firestore().collection("todos").getDocuments { snapshot, error in
+        Firestore.firestore().collection("todos").whereField("sender", isEqualTo: user).getDocuments { snapshot, error in
             if let error = error {
                 completion(.failure(.someError(error)))
                 return

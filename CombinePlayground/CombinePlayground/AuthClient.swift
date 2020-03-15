@@ -1,0 +1,22 @@
+//
+//  AuthClient.swift
+//  CombinePlayground
+//
+//  Created by Fumiya Tanaka on 2020/03/15.
+//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//
+
+import Foundation
+import FirebaseAuth
+
+class AuthClient {
+    func listenAuthState(onChanged: @escaping (User?) -> ()) {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            onChanged(user)
+        }
+    }
+    
+    func signInAnonymously() {
+        Auth.auth().signInAnonymously(completion: nil)
+    }
+}

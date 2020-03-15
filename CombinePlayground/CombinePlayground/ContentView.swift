@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  CombinePlayground
@@ -9,16 +10,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel: ViewModel
+    
     var body: some View {
-        List {
-            Text("Hello, World!").font(.largeTitle)
-            Text("SS")
+        NavigationView {
+            VStack {
+                NavigationLink(destination: AddToDoView()) {
+                    HStack {
+                        Image(systemName: "plus").aspectRatio(contentMode: .fill).aspectRatio(contentMode: .fill)
+                        Text("ToDoを追加").font(Font.callout)
+                    }
+                }
+                List(viewModel.todos, id: \ToDo.id) { (todo: ToDo) in
+                    Text(todo.content)
+                }
+            }.navigationBarTitle("ToDoList")
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: ViewModel())
     }
 }
