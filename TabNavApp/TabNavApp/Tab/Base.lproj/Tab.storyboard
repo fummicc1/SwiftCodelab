@@ -14,13 +14,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RootTab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opf-3H-sMD">
+                                <rect key="frame" x="64" y="92" width="286" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UOX-L8-KMp">
+                                <rect key="frame" x="0.0" y="800" width="414" height="96"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN9-Wo-FJg" customClass="TabButton" customModule="TabNavApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="96"/>
+                                        <state key="normal" image="1.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-Hl-xeQ" customClass="TabButton" customModule="TabNavApp" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="96"/>
+                                        <state key="normal" image="2.circle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Xvr-Ac-sw6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Opf-3H-sMD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="AA6-p5-dmv"/>
+                            <constraint firstAttribute="bottom" secondItem="UOX-L8-KMp" secondAttribute="bottom" id="Jgn-Qt-20e"/>
+                            <constraint firstItem="UOX-L8-KMp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e4T-ad-pTz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Opf-3H-sMD" secondAttribute="trailing" constant="64" id="gQh-hb-n6d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UOX-L8-KMp" secondAttribute="trailing" id="grA-3a-fKj"/>
+                            <constraint firstItem="Opf-3H-sMD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="l1J-6z-YoQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomStackView" destination="UOX-L8-KMp" id="7eG-Rc-iea"/>
+                        <outlet property="firstTabButton" destination="DN9-Wo-FJg" id="fjx-Vp-rSM"/>
+                        <outlet property="secondTabButton" destination="AaR-Hl-xeQ" id="s7O-Vg-pqm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.circle" catalog="system" width="64" height="60"/>
+        <image name="2.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

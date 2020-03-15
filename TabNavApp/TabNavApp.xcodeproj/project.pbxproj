@@ -14,7 +14,11 @@
 		D38F2AD5241E592700E2A85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38F2AD4241E592700E2A85D /* Assets.xcassets */; };
 		D38F2AD8241E592700E2A85D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38F2AD6241E592700E2A85D /* LaunchScreen.storyboard */; };
 		D38F2AE2241E595900E2A85D /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F2AE1241E595900E2A85D /* NavViewController.swift */; };
-		D38F2AE4241E596800E2A85D /* Nav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38F2AE3241E596800E2A85D /* Nav.storyboard */; };
+		D38F2AE6241E59C300E2A85D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F2AE5241E59C300E2A85D /* RootViewController.swift */; };
+		D38F2AE9241E5D0100E2A85D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F2AE8241E5D0100E2A85D /* FirstViewController.swift */; };
+		D38F2AEB241E5D7F00E2A85D /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38F2AEA241E5D7F00E2A85D /* First.storyboard */; };
+		D38F2AF1241E5DE200E2A85D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F2AF0241E5DE200E2A85D /* SecondViewController.swift */; };
+		D38F2AF3241E5DEF00E2A85D /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38F2AF2241E5DEF00E2A85D /* Second.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +31,11 @@
 		D38F2AD7241E592700E2A85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38F2AD9241E592700E2A85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D38F2AE1241E595900E2A85D /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
-		D38F2AE3241E596800E2A85D /* Nav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nav.storyboard; sourceTree = "<group>"; };
+		D38F2AE5241E59C300E2A85D /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D38F2AE8241E5D0100E2A85D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D38F2AEA241E5D7F00E2A85D /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		D38F2AF0241E5DE200E2A85D /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D38F2AF2241E5DEF00E2A85D /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +68,14 @@
 		D38F2ACA241E592600E2A85D /* TabNavApp */ = {
 			isa = PBXGroup;
 			children = (
-				D38F2AE0241E594F00E2A85D /* Nav */,
+				D38F2AD9241E592700E2A85D /* Info.plist */,
 				D38F2ACB241E592600E2A85D /* AppDelegate.swift */,
 				D38F2ACD241E592600E2A85D /* SceneDelegate.swift */,
-				D38F2ADF241E594A00E2A85D /* Tab */,
 				D38F2AD4241E592700E2A85D /* Assets.xcassets */,
+				D38F2AE7241E5CE900E2A85D /* Children */,
 				D38F2AD6241E592700E2A85D /* LaunchScreen.storyboard */,
-				D38F2AD9241E592700E2A85D /* Info.plist */,
+				D38F2AE0241E594F00E2A85D /* Nav */,
+				D38F2ADF241E594A00E2A85D /* Tab */,
 			);
 			path = TabNavApp;
 			sourceTree = "<group>";
@@ -84,9 +93,36 @@
 			isa = PBXGroup;
 			children = (
 				D38F2AE1241E595900E2A85D /* NavViewController.swift */,
-				D38F2AE3241E596800E2A85D /* Nav.storyboard */,
+				D38F2AE5241E59C300E2A85D /* RootViewController.swift */,
 			);
 			path = Nav;
+			sourceTree = "<group>";
+		};
+		D38F2AE7241E5CE900E2A85D /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				D38F2AEF241E5DE200E2A85D /* Second */,
+				D38F2AEC241E5DC100E2A85D /* First */,
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
+		D38F2AEC241E5DC100E2A85D /* First */ = {
+			isa = PBXGroup;
+			children = (
+				D38F2AE8241E5D0100E2A85D /* FirstViewController.swift */,
+				D38F2AEA241E5D7F00E2A85D /* First.storyboard */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		D38F2AEF241E5DE200E2A85D /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				D38F2AF0241E5DE200E2A85D /* SecondViewController.swift */,
+				D38F2AF2241E5DEF00E2A85D /* Second.storyboard */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +183,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38F2AF3241E5DEF00E2A85D /* Second.storyboard in Resources */,
 				D38F2AD8241E592700E2A85D /* LaunchScreen.storyboard in Resources */,
 				D38F2AD5241E592700E2A85D /* Assets.xcassets in Resources */,
-				D38F2AE4241E596800E2A85D /* Nav.storyboard in Resources */,
 				D38F2AD3241E592600E2A85D /* Tab.storyboard in Resources */,
+				D38F2AEB241E5D7F00E2A85D /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38F2AE6241E59C300E2A85D /* RootViewController.swift in Sources */,
 				D38F2AD0241E592600E2A85D /* TabViewController.swift in Sources */,
 				D38F2ACC241E592600E2A85D /* AppDelegate.swift in Sources */,
+				D38F2AE9241E5D0100E2A85D /* FirstViewController.swift in Sources */,
+				D38F2AF1241E5DE200E2A85D /* SecondViewController.swift in Sources */,
 				D38F2AE2241E595900E2A85D /* NavViewController.swift in Sources */,
 				D38F2ACE241E592600E2A85D /* SceneDelegate.swift in Sources */,
 			);
@@ -311,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = TabNavApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = TabNavApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
