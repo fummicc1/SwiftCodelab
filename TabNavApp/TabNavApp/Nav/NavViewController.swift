@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol NavigationAnimator: UIPercentDrivenInteractiveTransition {
+}
+
 class NavViewController: UINavigationController {
 
     var rootViewController: UIViewController {
