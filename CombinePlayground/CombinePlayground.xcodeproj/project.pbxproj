@@ -14,7 +14,6 @@
 		D3E8D2DA241C0BBF00DA6A1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E8D2D9241C0BBF00DA6A1C /* Preview Assets.xcassets */; };
 		D3E8D2DD241C0BBF00DA6A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E8D2DB241C0BBF00DA6A1C /* LaunchScreen.storyboard */; };
 		D3E8D32B241C12EE00DA6A1C /* gRPCCertificates-Cpp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3E8D32A241C12EE00DA6A1C /* gRPCCertificates-Cpp.bundle */; };
-		D3E8D32D241C13A600DA6A1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3E8D32C241C13A600DA6A1C /* GoogleService-Info.plist */; };
 		D3E8D339241C16A000DA6A1C /* abseil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D305241C121100DA6A1C /* abseil.framework */; };
 		D3E8D33B241C16A000DA6A1C /* BoringSSL-GRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D2FB241C121000DA6A1C /* BoringSSL-GRPC.framework */; };
 		D3E8D33D241C16A000DA6A1C /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D2FD241C121000DA6A1C /* FIRAnalyticsConnector.framework */; };
@@ -41,6 +40,10 @@
 		D3E8D36E241C180D00DA6A1C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D36D241C180D00DA6A1C /* libz.tbd */; };
 		D3E8D370241C188D00DA6A1C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D36F241C188D00DA6A1C /* StoreKit.framework */; };
 		D3E8D372241C18A000DA6A1C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8D371241C18A000DA6A1C /* libsqlite3.tbd */; };
+		D3F58FBF241DD46A005188A3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F58FBE241DD46A005188A3 /* ViewModel.swift */; };
+		D3F58FC1241DD4AF005188A3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F58FC0241DD4AF005188A3 /* Model.swift */; };
+		D3F58FC3241DD4F5005188A3 /* FirestoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F58FC2241DD4F5005188A3 /* FirestoreClient.swift */; };
+		D3F58FC5241DD5DE005188A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F58FC4241DD5DE005188A3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,13 +77,16 @@
 		D3E8D308241C121100DA6A1C /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
 		D3E8D309241C121100DA6A1C /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleDataTransportCCTSupport.framework; path = Carthage/Build/iOS/GoogleDataTransportCCTSupport.framework; sourceTree = "<group>"; };
 		D3E8D32A241C12EE00DA6A1C /* gRPCCertificates-Cpp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "gRPCCertificates-Cpp.bundle"; path = "Carthage/Build/iOS/gRPC-C++.framework/Resources/gRPCCertificates-Cpp.bundle"; sourceTree = "<group>"; };
-		D3E8D32C241C13A600DA6A1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3E8D367241C17D400DA6A1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D3E8D369241C17DE00DA6A1C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D3E8D36B241C180100DA6A1C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D3E8D36D241C180D00DA6A1C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D3E8D36F241C188D00DA6A1C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D3E8D371241C18A000DA6A1C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D3F58FBE241DD46A005188A3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D3F58FC0241DD4AF005188A3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D3F58FC2241DD4F5005188A3 /* FirestoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreClient.swift; sourceTree = "<group>"; };
+		D3F58FC4241DD5DE005188A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,13 +147,16 @@
 		D3E8D2CF241C0BBD00DA6A1C /* CombinePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				D3F58FC4241DD5DE005188A3 /* GoogleService-Info.plist */,
+				D3E8D2DE241C0BBF00DA6A1C /* Info.plist */,
 				D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */,
-				D3E8D2D2241C0BBD00DA6A1C /* SceneDelegate.swift */,
 				D3E8D2D4241C0BBD00DA6A1C /* ContentView.swift */,
-				D3E8D32C241C13A600DA6A1C /* GoogleService-Info.plist */,
+				D3F58FC2241DD4F5005188A3 /* FirestoreClient.swift */,
+				D3F58FC0241DD4AF005188A3 /* Model.swift */,
+				D3E8D2D2241C0BBD00DA6A1C /* SceneDelegate.swift */,
+				D3F58FBE241DD46A005188A3 /* ViewModel.swift */,
 				D3E8D2D6241C0BBF00DA6A1C /* Assets.xcassets */,
 				D3E8D2DB241C0BBF00DA6A1C /* LaunchScreen.storyboard */,
-				D3E8D2DE241C0BBF00DA6A1C /* Info.plist */,
 				D3E8D2D8241C0BBF00DA6A1C /* Preview Content */,
 			);
 			path = CombinePlayground;
@@ -256,9 +265,9 @@
 			files = (
 				D3E8D32B241C12EE00DA6A1C /* gRPCCertificates-Cpp.bundle in Resources */,
 				D3E8D2DD241C0BBF00DA6A1C /* LaunchScreen.storyboard in Resources */,
+				D3F58FC5241DD5DE005188A3 /* GoogleService-Info.plist in Resources */,
 				D3E8D2DA241C0BBF00DA6A1C /* Preview Assets.xcassets in Resources */,
 				D3E8D2D7241C0BBF00DA6A1C /* Assets.xcassets in Resources */,
-				D3E8D32D241C13A600DA6A1C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.¬\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -290,8 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F58FC1241DD4AF005188A3 /* Model.swift in Sources */,
 				D3E8D2D1241C0BBD00DA6A1C /* AppDelegate.swift in Sources */,
 				D3E8D2D3241C0BBD00DA6A1C /* SceneDelegate.swift in Sources */,
+				D3F58FBF241DD46A005188A3 /* ViewModel.swift in Sources */,
+				D3F58FC3241DD4F5005188A3 /* FirestoreClient.swift in Sources */,
 				D3E8D2D5241C0BBD00DA6A1C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
