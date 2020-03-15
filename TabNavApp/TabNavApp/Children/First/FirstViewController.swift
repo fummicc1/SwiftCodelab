@@ -17,5 +17,12 @@ class FirstViewController: RootViewController<String, FirstModel>  {
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = input
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(nextPage))
+    }
+    
+    @objc private func nextPage() {
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = UIColor.systemOrange
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
