@@ -10,7 +10,7 @@ import UIKit
 
 class TabViewController: UIViewController {
 
-    weak var currentChildViewController: NavViewController? {
+    weak var currentChildViewController: NavigationController? {
         didSet {
             if oldValue == currentChildViewController {
                 return
@@ -39,7 +39,7 @@ class TabViewController: UIViewController {
         super.viewDidLoad()
         view.translatesAutoresizingMaskIntoConstraints = false
         firstTabButton.action = { [weak self] in
-            if let firstVC = self?.children.compactMap({ $0 as? NavViewController }).first(where: { $0.rootViewController is FirstViewController }) {
+            if let firstVC = self?.children.compactMap({ $0 as? NavigationController }).first(where: { $0.rootViewController is FirstViewController }) {
                 self?.view.bringSubviewToFront(firstVC.view)
                 return
             }
@@ -48,11 +48,11 @@ class TabViewController: UIViewController {
             }) else {
                 return
             }
-            let currentChildViewController = NavViewController(rootViewController: firstVC)
+            let currentChildViewController = NavigationController(rootViewController: firstVC)
             self?.currentChildViewController = currentChildViewController
         }
         secondTabButton.action = { [weak self] in
-            if let secondVC = self?.children.compactMap({ $0 as? NavViewController }).first(where: { $0.rootViewController is SecondViewController }) {
+            if let secondVC = self?.children.compactMap({ $0 as? NavigationController }).first(where: { $0.rootViewController is SecondViewController }) {
                 self?.view.bringSubviewToFront(secondVC.view)
                 return
             }
@@ -61,7 +61,7 @@ class TabViewController: UIViewController {
             }) else {
                 return
             }
-            let currentChildViewController = NavViewController(rootViewController: secondVC)
+            let currentChildViewController = NavigationController(rootViewController: secondVC)
             self?.currentChildViewController = currentChildViewController
         }
         
@@ -71,7 +71,7 @@ class TabViewController: UIViewController {
         }) else {
             return
         }
-        let currentChildViewController = NavViewController(rootViewController: firstVC)
+        let currentChildViewController = NavigationController(rootViewController: firstVC)
         self.currentChildViewController = currentChildViewController
     }
 }
