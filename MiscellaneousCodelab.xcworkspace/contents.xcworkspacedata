@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BackgroundGyro/BackgroundGyro.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ModalTransitioningDelegateViewController/ModalTransitioningDelegateViewController.xcodeproj">
    </FileRef>
    <FileRef
