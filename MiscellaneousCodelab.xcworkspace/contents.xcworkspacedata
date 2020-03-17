@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ModalTransitioningDelegateViewController/ModalTransitioningDelegateViewController.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TabNavApp/TabNavApp.xcodeproj">
    </FileRef>
    <FileRef
