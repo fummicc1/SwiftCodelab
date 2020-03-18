@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D35F87C52421E61800B18E30 /* AddToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35F87C42421E61800B18E30 /* AddToDoViewModel.swift */; };
 		D3BDEFEA241E212E005F5010 /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEFE9241E212E005F5010 /* AuthClient.swift */; };
 		D3BDEFEC241E2ACE005F5010 /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */; };
 		D3E8D2D1241C0BBD00DA6A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D35F87C42421E61800B18E30 /* AddToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewModel.swift; sourceTree = "<group>"; };
 		D3BDEFE9241E212E005F5010 /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
 		D3E8D2CD241C0BBD00DA6A1C /* CombinePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombinePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +155,9 @@
 			children = (
 				D3F58FC4241DD5DE005188A3 /* GoogleService-Info.plist */,
 				D3E8D2DE241C0BBF00DA6A1C /* Info.plist */,
+				D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */,
 				D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */,
+				D3BDEFE9241E212E005F5010 /* AuthClient.swift */,
 				D3E8D2D4241C0BBD00DA6A1C /* ContentView.swift */,
 				D3F58FC2241DD4F5005188A3 /* FirestoreClient.swift */,
 				D3F58FC0241DD4AF005188A3 /* Model.swift */,
@@ -162,8 +166,7 @@
 				D3E8D2D6241C0BBF00DA6A1C /* Assets.xcassets */,
 				D3E8D2DB241C0BBF00DA6A1C /* LaunchScreen.storyboard */,
 				D3E8D2D8241C0BBF00DA6A1C /* Preview Content */,
-				D3BDEFE9241E212E005F5010 /* AuthClient.swift */,
-				D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */,
+				D35F87C42421E61800B18E30 /* AddToDoViewModel.swift */,
 			);
 			path = CombinePlayground;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				D3F58FC1241DD4AF005188A3 /* Model.swift in Sources */,
 				D3E8D2D1241C0BBD00DA6A1C /* AppDelegate.swift in Sources */,
 				D3E8D2D3241C0BBD00DA6A1C /* SceneDelegate.swift in Sources */,
+				D35F87C52421E61800B18E30 /* AddToDoViewModel.swift in Sources */,
 				D3F58FBF241DD46A005188A3 /* ViewModel.swift in Sources */,
 				D3F58FC3241DD4F5005188A3 /* FirestoreClient.swift in Sources */,
 				D3BDEFEC241E2ACE005F5010 /* AddToDoView.swift in Sources */,

@@ -83,7 +83,6 @@ final class ViewModel: ObservableObject {
     @Published var todos: [ToDo] = []
     @Published var error: Error?
     @Published var user: User? = nil
-    private var isInitialized: Bool = false
     
     private var cancellables: [AnyCancellable] = []
     

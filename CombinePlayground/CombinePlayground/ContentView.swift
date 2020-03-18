@@ -12,21 +12,26 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var viewModel: ViewModel
+    @State private var isPresenting: Bool = false
     
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: AddToDoView()) {
+                Button(action: {
+                    self.isPresenting = true
+                }, label: {
                     HStack {
                         Image(systemName: "plus").aspectRatio(contentMode: .fill)
                         Text("ToDoを追加").font(Font.callout)
                     }
-                }
+                })
                 List(viewModel.todos, id: \ToDo.id) { (todo: ToDo) in
                     Text(todo.content)
                 }
             }.navigationBarTitle("ToDoList")
-        }
+        }.sheet(isPresented: $isPresenting, content: {
+            AddToDoView(viewModel: AddToDoViewModel())
+        })
     }
 }
 
