@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 protocol Model {
     init?(data: [String: Any])
@@ -14,30 +15,36 @@ protocol Model {
 }
 
 struct ToDo {
-    let id: Int
+    let title: String
     let content: String
     let createdAt: Date
     let sender: String
     let deadline: Date
     
     init?(data: [String: Any]) {
-        guard let id = data["id"] as? Int, let content = data["content"] as? String, let createdAt = data["created_at"] as? Date, let deadline = data["deadline"] as? Date, let sender = data["sender"] as? String else {
+        guard let title = data["title"] as? String, let content = data["content"] as? String, let deadline = data["deadline"] as? Timestamp, let sender = data["sender"] as? String else {
             return nil
         }
-        self.id = id
+        self.title = title
         self.content = content
         self.sender = sender
-        self.createdAt = createdAt
-        self.deadline = deadline
+        self.createdAt = (data["created_at"] as? Timestamp ?? Timestamp()).dateValue()
+        self.deadline = deadline.dateValue()
     }
     
     var data: [String: Any] {
         [
-            "id": id,
+            "title": title,
             "content": content,
             "sender": sender,
             "created_at": createdAt,
             "deadline": deadline
         ]
+    }
+}
+
+extension ToDo: Identifiable {
+    var id: String {
+        "\(title):\(content):\(deadline)"
     }
 }

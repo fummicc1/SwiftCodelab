@@ -156,6 +156,7 @@
 				D3F58FC4241DD5DE005188A3 /* GoogleService-Info.plist */,
 				D3E8D2DE241C0BBF00DA6A1C /* Info.plist */,
 				D3BDEFEB241E2ACE005F5010 /* AddToDoView.swift */,
+				D35F87C42421E61800B18E30 /* AddToDoViewModel.swift */,
 				D3E8D2D0241C0BBD00DA6A1C /* AppDelegate.swift */,
 				D3BDEFE9241E212E005F5010 /* AuthClient.swift */,
 				D3E8D2D4241C0BBD00DA6A1C /* ContentView.swift */,
@@ -166,7 +167,6 @@
 				D3E8D2D6241C0BBF00DA6A1C /* Assets.xcassets */,
 				D3E8D2DB241C0BBF00DA6A1C /* LaunchScreen.storyboard */,
 				D3E8D2D8241C0BBF00DA6A1C /* Preview Content */,
-				D35F87C42421E61800B18E30 /* AddToDoViewModel.swift */,
 			);
 			path = CombinePlayground;
 			sourceTree = "<group>";

@@ -25,7 +25,7 @@ struct ContentView: View {
                         Text("ToDoを追加").font(Font.callout)
                     }
                 })
-                List(viewModel.todos, id: \ToDo.id) { (todo: ToDo) in
+                List(viewModel.todos) { (todo: ToDo) in
                     Text(todo.content)
                 }
             }.navigationBarTitle("ToDoList")

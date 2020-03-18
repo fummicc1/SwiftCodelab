@@ -26,6 +26,9 @@ class FirestoreClient {
                 completion(.failure(.noSnapshot))
                 return
             }
+            if snapshot.metadata.hasPendingWrites {
+                return
+            }
             let todos = snapshot.documents.compactMap { ToDo(data: $0.data()) }
             completion(.success(todos))
         }
@@ -43,6 +46,16 @@ class FirestoreClient {
             }
             let todos = snapshot.documents.compactMap { ToDo(data: $0.data()) }
             completion(.success(todos))
+        }
+    }
+    
+    func createToDo(_ todo: ToDo, completion: @escaping (Result<Void, FirestoreClient.Error>) -> Void) {
+        Firestore.firestore().collection("todos").document().setData(todo.data, merge: true) { error in
+            if let error = error {
+                completion(.failure(.someError(error)))
+                return
+            }
+            completion(.success(()))
         }
     }
 }
