@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol Model {
+    init?(data: [String: Any])
+    var data: [String: Any] { get }
+}
+
 struct ToDo {
     let id: Int
     let content: String

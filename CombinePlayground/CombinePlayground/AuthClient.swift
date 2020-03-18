@@ -10,7 +10,7 @@ import Foundation
 import FirebaseAuth
 
 class AuthClient {
-    func listenAuthState(onChanged: @escaping (User?) -> ()) {
+    func listenAuthState(onChanged: @escaping (User?) -> ()) -> AuthStateDidChangeListenerHandle {
         Auth.auth().addStateDidChangeListener { (auth, user) in
             onChanged(user)
         }
