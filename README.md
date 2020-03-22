@@ -14,5 +14,7 @@ MiscellaneousCodelab written in Swift
     - sample of Custom `UITabController` and Custom `UINavigationController` Transition
 - [x] UIButtonSubviews
     - sample of custom `UIButton` that has original contents.
+- [ ] UISearchTokenExample
+    - sample of `UISearchToken`
 - [x] UITableViewLabelPerformance
     - sample of `didEndDisplaying` and `prepareForReuse`
