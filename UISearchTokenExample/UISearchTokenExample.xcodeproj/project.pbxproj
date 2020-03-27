@@ -13,6 +13,7 @@
 		D33E60C12427B67D0025C854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33E60BF2427B67D0025C854 /* Main.storyboard */; };
 		D33E60C32427B67F0025C854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E60C22427B67F0025C854 /* Assets.xcassets */; };
 		D33E60C62427B67F0025C854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33E60C42427B67F0025C854 /* LaunchScreen.storyboard */; };
+		D33EB4B5242E401E001078D2 /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33EB4B4242E401E001078D2 /* Hobby.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D33E60C22427B67F0025C854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33E60C52427B67F0025C854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D33E60C72427B67F0025C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33EB4B4242E401E001078D2 /* Hobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		D33E60B82427B67D0025C854 /* UISearchTokenExample */ = {
 			isa = PBXGroup;
 			children = (
+				D33E60C72427B67F0025C854 /* Info.plist */,
 				D33E60B92427B67D0025C854 /* AppDelegate.swift */,
+				D33EB4B4242E401E001078D2 /* Hobby.swift */,
 				D33E60BB2427B67D0025C854 /* SceneDelegate.swift */,
 				D33E60BD2427B67D0025C854 /* ViewController.swift */,
-				D33E60BF2427B67D0025C854 /* Main.storyboard */,
 				D33E60C22427B67F0025C854 /* Assets.xcassets */,
 				D33E60C42427B67F0025C854 /* LaunchScreen.storyboard */,
-				D33E60C72427B67F0025C854 /* Info.plist */,
+				D33E60BF2427B67D0025C854 /* Main.storyboard */,
 			);
 			path = UISearchTokenExample;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				D33E60BE2427B67D0025C854 /* ViewController.swift in Sources */,
 				D33E60BA2427B67D0025C854 /* AppDelegate.swift in Sources */,
+				D33EB4B5242E401E001078D2 /* Hobby.swift in Sources */,
 				D33E60BC2427B67D0025C854 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
