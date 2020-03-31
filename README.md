@@ -1,5 +1,5 @@
-# MiscellaneousCodelab
-MiscellaneousCodelab written in Swift
+# SwiftCodelab
+SwiftCodelab is a collection of miscellaneous projects.
 
 # Projects
 - [ ] BackgroundGyro
