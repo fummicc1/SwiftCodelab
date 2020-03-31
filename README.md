@@ -8,6 +8,8 @@ SwiftCodelab is a collection of miscellaneous projects.
     - sample of `DispatchQueue (both serial and concurrent)`
 - [x] ModalTransitioningDelegateViewController
     - sample of `UIViewControllerTransitioningDelegate`
+- [ ] PracticeRxTests
+    - sample of `RxTest` and `RxBlocking`
 - [x] StructAnyObject
     - sample of (struct and AnyObject) and (Optional and Any)
 - [x] TabNavApp
