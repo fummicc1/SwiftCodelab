@@ -22,6 +22,8 @@
 		D30BE6DF2434119600AEC4EF /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D30BE6D92434119600AEC4EF /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D30BE6E62434126200AEC4EF /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30BE6E42434126200AEC4EF /* RxTest.framework */; platformFilter = ios; };
 		D30BE6E72434126200AEC4EF /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30BE6E52434126200AEC4EF /* RxBlocking.framework */; platformFilter = ios; };
+		D30BE6E92434132100AEC4EF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BE6E82434132100AEC4EF /* ViewModel.swift */; };
+		D30BE6EB2434163C00AEC4EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30BE6EA2434163C00AEC4EF /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		D30BE6D92434119600AEC4EF /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		D30BE6E42434126200AEC4EF /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		D30BE6E52434126200AEC4EF /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		D30BE6E82434132100AEC4EF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D30BE6EA2434163C00AEC4EF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +118,15 @@
 		D30BE6B324340F9800AEC4EF /* PracticeRxTests */ = {
 			isa = PBXGroup;
 			children = (
+				D30BE6C224340F9900AEC4EF /* Info.plist */,
 				D30BE6B424340F9800AEC4EF /* AppDelegate.swift */,
+				D30BE6EA2434163C00AEC4EF /* Model.swift */,
 				D30BE6B624340F9800AEC4EF /* SceneDelegate.swift */,
 				D30BE6B824340F9800AEC4EF /* ViewController.swift */,
-				D30BE6BA24340F9800AEC4EF /* Main.storyboard */,
+				D30BE6E82434132100AEC4EF /* ViewModel.swift */,
 				D30BE6BD24340F9900AEC4EF /* Assets.xcassets */,
 				D30BE6BF24340F9900AEC4EF /* LaunchScreen.storyboard */,
-				D30BE6C224340F9900AEC4EF /* Info.plist */,
+				D30BE6BA24340F9800AEC4EF /* Main.storyboard */,
 			);
 			path = PracticeRxTests;
 			sourceTree = "<group>";
@@ -294,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30BE6EB2434163C00AEC4EF /* Model.swift in Sources */,
 				D30BE6B924340F9800AEC4EF /* ViewController.swift in Sources */,
 				D30BE6B524340F9800AEC4EF /* AppDelegate.swift in Sources */,
+				D30BE6E92434132100AEC4EF /* ViewModel.swift in Sources */,
 				D30BE6B724340F9800AEC4EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

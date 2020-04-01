@@ -12,11 +12,11 @@ import RxCocoa
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
