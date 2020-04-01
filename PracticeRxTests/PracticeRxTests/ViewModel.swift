@@ -12,7 +12,26 @@ import RxCocoa
 
 extension ViewController {
     
-    enum InputValidationResult {
+    enum InputValidationResult: Equatable {
+        static func == (lhs: ViewController.InputValidationResult, rhs: ViewController.InputValidationResult) -> Bool {
+            switch (lhs, rhs) {
+            case (ViewController.InputValidationResult.success, .success):
+                return true
+                
+            case (ViewController.InputValidationResult.wrongUserName, .wrongUserName):
+                return true
+                
+            case (ViewController.InputValidationResult.wrongPassword, .wrongPassword):
+                return true
+                
+            case (ViewController.InputValidationResult.wrongBothUserNameAndPassword, .wrongBothUserNameAndPassword):
+                return true
+                
+            default:
+                return false
+            }
+        }
+        
         case success
         case wrongUserName(UserNameInputError)
         case wrongPassword(PasswordInputError)
