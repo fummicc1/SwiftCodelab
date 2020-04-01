@@ -49,7 +49,7 @@ extension ViewController {
                     model.validate(userName: userName, password: password)
                 })
                 .bind(to: inputValidationResultRelay)
-                .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
         }
     }
 }

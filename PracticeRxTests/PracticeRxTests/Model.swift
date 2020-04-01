@@ -11,16 +11,31 @@ import Foundation
 extension ViewController {
     class Model {
         func validate(userName: String, password: String) -> InputValidationResult {
-            if userName.isEmpty, password.isEmpty {
-                return .wrongBothUserNameAndPassword((UserNameInputError.empty, PasswordInputError.empty))
-            } else if userName.isEmpty, password.count < 6 {
-                return .wrongBothUserNameAndPassword((UserNameInputError.empty, PasswordInputError.requireSixChars))
-            } else if userName.isEmpty {
-                return .wrongUserName(.empty)
-            } else if password.isEmpty {
-                return .wrongPassword(.empty)
+            var userNameError: UserNameInputError?
+            var passwordError: PasswordInputError?
+            
+            if userName.isEmpty {
+                userNameError = .empty
             }
-            return .success
+            if password.isEmpty {
+                passwordError = .empty
+            } else if password.count < 6 {
+                passwordError = .requireSixChars
+            }
+            
+            switch (userNameError, passwordError) {
+            case (let userNameError?, let passwordError?):
+                return InputValidationResult.wrongBothUserNameAndPassword((userNameError, passwordError))
+                
+            case (let userNameError?, _):
+                return InputValidationResult.wrongUserName(userNameError)
+                
+            case (_, let passwordError?):
+                return InputValidationResult.wrongPassword(passwordError)
+                
+            default:
+                return .success
+            }
         }
     }
 }

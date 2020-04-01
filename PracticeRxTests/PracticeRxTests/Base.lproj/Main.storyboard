@@ -14,9 +14,45 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-sE-QDK">
+                                <rect key="frame" x="32" y="402" width="350" height="92"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLA-zh-eZD">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-LF-myw">
+                                        <rect key="frame" x="0.0" y="58" width="350" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザー登録" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="EYK-M9-1g9">
+                                <rect key="frame" x="32" y="323.5" width="350" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IUC-sE-QDK" firstAttribute="top" secondItem="EYK-M9-1g9" secondAttribute="bottom" constant="40" id="1zf-U8-61X"/>
+                            <constraint firstItem="IUC-sE-QDK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="2IT-me-0ap"/>
+                            <constraint firstItem="EYK-M9-1g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="KUR-vG-ey7"/>
+                            <constraint firstItem="IUC-sE-QDK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cyb-PE-IZ8"/>
+                            <constraint firstItem="IUC-sE-QDK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iQT-04-nes"/>
+                            <constraint firstItem="EYK-M9-1g9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdT-HP-juQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Mqi-LF-myw" id="Swj-iF-eja"/>
+                        <outlet property="userNameTextField" destination="mLA-zh-eZD" id="Spq-K6-myk"/>
+                        <outlet property="validationLabel" destination="EYK-M9-1g9" id="DxA-Pf-j3N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
