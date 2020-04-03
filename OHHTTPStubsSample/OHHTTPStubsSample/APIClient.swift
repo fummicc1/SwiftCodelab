@@ -95,7 +95,6 @@ class APIClient {
             }
             
             guard let data = data else {
-                // FIXME: This should return a proper error
                 completion(nil, .noResponseData)
                 return
             }
