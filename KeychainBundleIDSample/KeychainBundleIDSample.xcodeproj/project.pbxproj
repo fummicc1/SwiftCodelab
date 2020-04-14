@@ -49,6 +49,7 @@
 		D350E47D243CA3B2005B61F0 /* KeychainBundleIDSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainBundleIDSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D350E481243CA3B2005B61F0 /* KeychainBundleIDSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainBundleIDSampleUITests.swift; sourceTree = "<group>"; };
 		D350E483243CA3B2005B61F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3D3916724457EC700460C60 /* KeychainBundleIDSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeychainBundleIDSample.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		D350E45E243CA3AD005B61F0 /* KeychainBundleIDSample */ = {
 			isa = PBXGroup;
 			children = (
+				D3D3916724457EC700460C60 /* KeychainBundleIDSample.entitlements */,
 				D350E45F243CA3AD005B61F0 /* AppDelegate.swift */,
 				D350E461243CA3AD005B61F0 /* SceneDelegate.swift */,
 				D350E463243CA3AD005B61F0 /* ViewController.swift */,
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeychainBundleIDSample/KeychainBundleIDSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = KeychainBundleIDSample/Info.plist;
@@ -452,8 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeychainBundleIDSample/KeychainBundleIDSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = KeychainBundleIDSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
