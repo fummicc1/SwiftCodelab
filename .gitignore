@@ -1,5 +1,6 @@
 *.trace
 DerivedData
-Carthage
+Carthage/
 GoogleService-Info.plist
 .DS_Store
+Pods/

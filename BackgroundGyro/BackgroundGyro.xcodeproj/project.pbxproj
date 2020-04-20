@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7D22C7EFBFC670E0D4A2B0 /* Pods_BackgroundGyro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A28C433BD1D50B0DFD5362D /* Pods_BackgroundGyro.framework */; };
 		D35085CB24212AA700C06689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35085CA24212AA700C06689 /* AppDelegate.swift */; };
 		D35085CD24212AA700C06689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35085CC24212AA700C06689 /* SceneDelegate.swift */; };
 		D35085CF24212AA700C06689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35085CE24212AA700C06689 /* ViewController.swift */; };
 		D35085D224212AA700C06689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35085D024212AA700C06689 /* Main.storyboard */; };
 		D35085D424212AA800C06689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35085D324212AA800C06689 /* Assets.xcassets */; };
 		D35085D724212AA800C06689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D35085D524212AA800C06689 /* LaunchScreen.storyboard */; };
+		D3BE6E55244D8E6D0029D832 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3BE6E54244D8E6D0029D832 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A28C433BD1D50B0DFD5362D /* Pods_BackgroundGyro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackgroundGyro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4569BFAFAD0E0582CA59E71A /* Pods-BackgroundGyro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundGyro.release.xcconfig"; path = "Target Support Files/Pods-BackgroundGyro/Pods-BackgroundGyro.release.xcconfig"; sourceTree = "<group>"; };
+		728BED65BE66EA13E4938B8E /* Pods-BackgroundGyro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundGyro.debug.xcconfig"; path = "Target Support Files/Pods-BackgroundGyro/Pods-BackgroundGyro.debug.xcconfig"; sourceTree = "<group>"; };
 		D35085C724212AA700C06689 /* BackgroundGyro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundGyro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35085CA24212AA700C06689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D35085CC24212AA700C06689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D35085D324212AA800C06689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D35085D624212AA800C06689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D35085D824212AA800C06689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3BE6E54244D8E6D0029D832 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7D22C7EFBFC670E0D4A2B0 /* Pods_BackgroundGyro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BB33D186D2055A078F9F884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A28C433BD1D50B0DFD5362D /* Pods_BackgroundGyro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FCCEDF87BEF11C906F0EF59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				728BED65BE66EA13E4938B8E /* Pods-BackgroundGyro.debug.xcconfig */,
+				4569BFAFAD0E0582CA59E71A /* Pods-BackgroundGyro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D35085BE24212AA700C06689 = {
 			isa = PBXGroup;
 			children = (
 				D35085C924212AA700C06689 /* BackgroundGyro */,
 				D35085C824212AA700C06689 /* Products */,
+				7FCCEDF87BEF11C906F0EF59 /* Pods */,
+				7BB33D186D2055A078F9F884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +87,7 @@
 				D35085CE24212AA700C06689 /* ViewController.swift */,
 				D35085D024212AA700C06689 /* Main.storyboard */,
 				D35085D324212AA800C06689 /* Assets.xcassets */,
+				D3BE6E54244D8E6D0029D832 /* GoogleService-Info.plist */,
 				D35085D524212AA800C06689 /* LaunchScreen.storyboard */,
 				D35085D824212AA800C06689 /* Info.plist */,
 			);
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D35085DB24212AA800C06689 /* Build configuration list for PBXNativeTarget "BackgroundGyro" */;
 			buildPhases = (
+				372AD9FEBBB775685942764E /* [CP] Check Pods Manifest.lock */,
 				D35085C324212AA700C06689 /* Sources */,
 				D35085C424212AA700C06689 /* Frameworks */,
 				D35085C524212AA700C06689 /* Resources */,
+				E5D5658C307326FDD87BDB41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +157,53 @@
 				D35085D724212AA800C06689 /* LaunchScreen.storyboard in Resources */,
 				D35085D424212AA800C06689 /* Assets.xcassets in Resources */,
 				D35085D224212AA700C06689 /* Main.storyboard in Resources */,
+				D3BE6E55244D8E6D0029D832 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		372AD9FEBBB775685942764E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackgroundGyro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D5658C307326FDD87BDB41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackgroundGyro/Pods-BackgroundGyro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BackgroundGyro/Pods-BackgroundGyro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BackgroundGyro/Pods-BackgroundGyro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D35085C324212AA700C06689 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		D35085DC24212AA800C06689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728BED65BE66EA13E4938B8E /* Pods-BackgroundGyro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		D35085DD24212AA800C06689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4569BFAFAD0E0582CA59E71A /* Pods-BackgroundGyro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
