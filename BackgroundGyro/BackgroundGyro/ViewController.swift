@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet private weak var otherYLabel: UILabel!
     @IBOutlet private weak var otherZLabel: UILabel!
     
+    private let viewModel: ViewModel = ViewModel(input: ViewModel.Input())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
