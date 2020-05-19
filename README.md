@@ -4,7 +4,7 @@ SwiftCodelab is a collection of miscellaneous projects.
 # Projects
 - [ ] BackgroundGyro
 - [ ] CombinePlayground
-- [ ] CompositionalLayoutApp
+- [x] CompositionalLayoutApp
 - [x] DispatchConcurrentQueue
     - sample of `DispatchQueue (both serial and concurrent)`
 - [x] ModalTransitioningDelegateViewController
