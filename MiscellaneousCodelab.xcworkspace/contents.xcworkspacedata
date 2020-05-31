@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RIBsSample/RIBsSample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CompositionalLayoutApp/CompositionalLayoutApp.xcodeproj">
    </FileRef>
    <FileRef
