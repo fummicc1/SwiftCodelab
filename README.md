@@ -14,9 +14,9 @@ SwiftCodelab is a collection of miscellaneous projects.
     - sample of `OHHTTPStubs`
 - [ ] PracticeRxTests
     - sample of `RxTest` and `RxBlocking`
-- [ ] ReactorKitSample
+- [x] ReactorKitSample
     - sample of `ReactorKit`
-- [ ] - RIBsSample
+- [ ] RIBsSample
 - [x] StructAnyObject
     - sample of (struct and AnyObject) and (Optional and Any)
 - [x] TabNavApp
