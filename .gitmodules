@@ -1,3 +1,6 @@
 [submodule "ReactorKitSample"]
 	path = ReactorKitSample
 	url = https://github.com/fummicc1/ReactorKitSample
+[submodule "SimpleRoulette"]
+	path = SimpleRoulette
+	url = https://github.com/fummicc1/SimpleRoulette
