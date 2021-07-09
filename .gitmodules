@@ -4,3 +4,15 @@
 [submodule "SimpleRoulette"]
 	path = SimpleRoulette
 	url = https://github.com/fummicc1/SimpleRoulette
+[submodule "EasyFirebaseSwift"]
+	path = EasyFirebaseSwift
+	url = https://github.com/fummicc1/EasyFirebaseSwift
+[submodule "SpmConfigurationExamination"]
+	path = SpmConfigurationExamination
+	url = https://github.com/fummicc1/SpmConfigurationExamination
+[submodule "TabPager"]
+	path = TabPager
+	url = https://github.com/fummicc1/TabPager
+[submodule "LocationNotificationSampler"]
+	path = LocationNotificationSampler
+	url = https://github.com/fummicc1/LocationNotificationSampler
